@@ -13,8 +13,8 @@ const images = [
   },
 ];
 
-const galleryRef = document.querySelector(".gallery");
-const listImageMarkup = ({ url, alt }) => {
+const galleryEl = document.querySelector(".gallery");
+const listImage = ({ url, alt }) => {
   return `
     <li>
       <img class = "img-gallery" src = "${url}" alt = "${alt}" width = "250">
@@ -22,8 +22,7 @@ const listImageMarkup = ({ url, alt }) => {
     </li>
     `;
 };
-
 const listImage = images.map(listImageMarkup).join("");
-galleryRef.insertAdjacentHTML("beforeend", listImage);
+galleryEl.insertAdjacentHTML("beforeend", listImage);
 
-galleryRef.classList.add("js-gallery");
+galleryEl.classList.add("js-gallery");
