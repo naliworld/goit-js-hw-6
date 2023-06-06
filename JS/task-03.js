@@ -14,15 +14,15 @@ const images = [
 ];
 
 const galleryEl = document.querySelector(".gallery");
-const listImage = ({ url, alt }) => {
+const listImageGallery = ({ url, alt }) => {
   return `
     <li>
-      <img class = "img-gallery" src = "${url}" alt = "${alt}" width = "250">
+      <img class = "img-gallery" src = "${url}" alt = "${alt}" width = “400" height = "250">
       </img>
     </li>
     `;
 };
-const listImage = images.map(listImageMarkup).join("");
+const listImage = images.map(listImageGallery).join("");
 galleryEl.insertAdjacentHTML("beforeend", listImage);
 
 galleryEl.classList.add("js-gallery");
