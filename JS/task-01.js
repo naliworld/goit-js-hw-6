@@ -1,8 +1,8 @@
-const listRef = document.querySelectorAll(".item");
+const listEl = document.querySelectorAll(".item");
 
-console.log(`Number of categories: ${listRef.length}`);
+console.log(`Number of categories: ${listEl.length}`);
 
-listRef.forEach((el) =>
+listEl.forEach((el) =>
   console.log(
     `Category: ${el.firstElementChild.textContent}`,
     `\nElements: ${el.lastElementChild.children.length}`,
