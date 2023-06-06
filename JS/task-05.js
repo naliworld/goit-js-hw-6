@@ -1,14 +1,14 @@
-const fieldInputEl = document.querySelector("#name-input");
-const fieldOutputEl = document.querySelector("#name-output");
+const InputEl = document.querySelector("#name-input");
+const OutputEl = document.querySelector("#name-output");
 
-fieldInputEl.addEventListener("input", onInputValueField);
+InputEl.addEventListener("input", onInputValueField);
 
 function onInputValueField(event) {
   event.preventDefault;
 
-  fieldOutputEl.textContent = event.currentTarget.value;
-  
+  OutputEl.textContent = event.currentTarget.value;
+
   if (event.currentTarget.value === "") {
-    fieldOutputEl.textContent = "Anonymous";
+    OutputEl.textContent = "Anonymous";
   }
 }
