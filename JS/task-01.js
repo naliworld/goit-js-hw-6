@@ -1,7 +1,9 @@
 const listEl = document.querySelectorAll(".item");
 
-
-console.log(`Number of categories: `, listEl.length);
+const getNumberOfItem = () => {
+  quantityItem =listEl.children.length;
+  console.log(`Number of categories: `, quantityItem.length);
+}
 
 listEl.forEach((el) =>
   console.log(`Category: `, el.firstElementChild.textContent),
