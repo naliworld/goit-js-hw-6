@@ -1,6 +1,6 @@
 const listEl = document.querySelectorAll(".item");
 
-console.log(`Number of categories: `, listEl, 3);
+console.log(`Number of categories: `, listEl);
 
 listEl.forEach((el) =>
   console.log(`Category: `, el.firstElementChild.textContent),
